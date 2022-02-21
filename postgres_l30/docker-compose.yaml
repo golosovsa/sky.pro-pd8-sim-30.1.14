@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  postgres:
+    build: ./docker-postgresql-multiple-databases/.
+    volumes:
+      - ./docker-postgresql-multiple-databases:/docker-entrypoint-initdb.d
+      - postgres_data:/var/lib/postgresql/data
+    environment:
+      POSTGRES_MULTIPLE_DATABASES: custom_user_1,custom_user_2,register,jwt_token
+      POSTGRES_PASSWORD: skypro_l30
+      POSTGRES_USER: skypro_l30
+    ports:
+    - "5432:5432"
+
+volumes:
+  postgres_data:
