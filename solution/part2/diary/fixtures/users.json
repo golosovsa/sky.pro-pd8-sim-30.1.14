@@ -1,0 +1,22 @@
+[
+  {
+    "model": "my_diary.user",
+    "pk": 1,
+    "fields": {
+      "username": "teacher",
+      "email": "teacher@skypro.ru",
+      "role" : "teacher",
+      "password": "pbkdf2_sha256$320000$RLQjGy9tbpCuEA0FrYAIni$KIG0H0JGM8Sz/EhG6WPwgPjxwEhBTVio/hrFG6pnO/A="
+    }
+  },
+  {
+    "model": "my_diary.user",
+    "pk": 2,
+    "fields": {
+      "username": "student",
+      "email": "student@skypro.ru",
+      "role": "student",
+      "password": "pbkdf2_sha256$320000$RLQjGy9tbpCuEA0FrYAIni$KIG0H0JGM8Sz/EhG6WPwgPjxwEhBTVio/hrFG6pnO/A="
+    }
+  }
+]
