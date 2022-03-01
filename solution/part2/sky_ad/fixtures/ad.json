@@ -1,0 +1,22 @@
+[
+  {
+    "model": "ad.ad",
+    "pk": 1,
+    "fields": {
+      "user": 1,
+      "name": "Монитор 27",
+      "description": "",
+      "price": 5500
+    }
+  },
+  {
+    "model": "ad.ad",
+    "pk": 2,
+    "fields": {
+      "user": 2,
+      "name": "Телевизор 27",
+      "description": "",
+      "price": 9700
+    }
+  }
+]

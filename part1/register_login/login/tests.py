@@ -32,7 +32,7 @@ class RegisterClassTestCase(TestCase, ResponseTestsMixin):
         self.url = TEST_URL
         test_options = {
             "url": self.url,
-            "method": "GET",
+            "method": "POST",
             "code": [200],
             "student_response": self.student_app.post(
                 self.url,

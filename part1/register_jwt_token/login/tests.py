@@ -33,7 +33,7 @@ class RegisterClassTestCase(TestCase, ResponseTestsMixin):
         self.url = TEST_TOKEN_URL
         test_options = {
             "url": self.url,
-            "method": "GET",
+            "method": "POST",
             "code": [200],
             "student_response": self.student_app.post(
                 self.url,
@@ -44,7 +44,6 @@ class RegisterClassTestCase(TestCase, ResponseTestsMixin):
             ),
             "expected": dict,
             "django_mode": True,
-            "debug_mode": True
         }
 
         response = self.check_status_code_jsonify_and_expected(**test_options)
