@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "rest_framework",
     "rest_framework.authtoken",
-    "my_diary"
+    "my_diary",
 ]
 
 AUTH_USER_MODEL = 'my_diary.User'
